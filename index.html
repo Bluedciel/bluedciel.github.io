@@ -10,7 +10,9 @@ background-image: url(bgs.png);
 background-repeat: no-repeat;">
 <style>
 
-    
+#flex {flex-wrap: wrap;
+        padding: 10%;}
+
 body {
         color: rgb(218, 219, 113);
         text-align: center;
@@ -22,6 +24,7 @@ h4, h3 {
 font-family: sal;
 }
 #CE {
+    margin-bottom: 120px;
     font-size: 2.5rem;
     font-family: han;
 }
@@ -90,9 +93,9 @@ font-family: sal;
         width: 300px;
     }
 </style>
-
+<div id="flex">
     <form action="" method="get">
-        <h3 id="CE">Current CE :</h3><br/><h2 id="ce">298</h2>
+        <h3 id="CE">Current CE :</h3><h2 id="ce">298</h2>
         <button class="rst" type="button" onclick="ce.innerText = 298"> Reset</button> <button class="rst" type="button" onclick="ce.innerText = ce.innerText - (-94)"> Regen</button>
     </form>
     
@@ -118,5 +121,6 @@ font-family: sal;
         <h3>Reduce CE :</h3>
         <input class="inpu" type="number" ondblclick="ce.innerText = ce.innerText - this.value">
 
-        <p>Current Capability : 3 Action, 1 Bonus Action and 1 Reaction per turn</p>
+        <p>Current Capability : 2 Action, 1 Bonus Action and 1 Reaction per turn</p>
+    </div>
 </body>
